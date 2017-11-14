@@ -14,7 +14,7 @@
       $descripcion=isset($_POST['descripcion'])? $_POST['descripcion']:"";
 
       $statement_update = $pdo->prepare($sql_update);
-      $statement_update->execute(array($codigo2, $nobre, $medida, $precio, $descripcion, $codigo));
+      $statement_update->execute(array($codigo2, $nombre, $medida, $precio, $descripcion, $codigo));
 
       header('location:articulo.php');
   }
